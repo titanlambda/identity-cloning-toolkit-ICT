@@ -210,6 +210,10 @@ python app.py
 ---
 ### 9. Run the video streamer
 ---
+
+![](https://github.com/titanlambda/identity-cloning/blob/master/sample_output/Video_Streamer_architecture.png)
+
+
 - In the pipeline folder, record one video of you sitting and doing nothing as if you are listening to the audio over the zoom call. Example given in the source folder called "silent.m4v".
 
 - Go to google tesxt to speech service and register there to get an API key. It should be in a file called "key.json". Download the file and save it in this folder.
