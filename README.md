@@ -1,6 +1,10 @@
 
 # Identity Clonning
 
+![](https://github.com/titanlambda/identity-cloning/blob/master/image1.png)
+![](https://github.com/titanlambda/identity-cloning/blob/master/image2.png)
+![](https://github.com/titanlambda/identity-cloning/blob/master/image3.png)
+
 
 ### Pre-requisite: 
 - We will be using virtualenv to create virtual environments. You can you other options like Conda if are familiar to that. 
