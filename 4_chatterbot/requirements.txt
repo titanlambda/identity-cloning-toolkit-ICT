@@ -1,0 +1,4 @@
+chatterbot
+pandas
+numpy
+Flask

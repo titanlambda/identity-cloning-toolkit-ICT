@@ -2,14 +2,16 @@
 # Identity Clonning
 
 
-## Pre-requisite: We will be using virtualenv to create virtual environments. You can you other options like Conda if are familiar to that. Python 3.7 used for this project
+### Pre-requisite: 
+- We will be using virtualenv to create virtual environments. You can you other options like Conda if are familiar to that. 
+- Python 3.7 used for this project
+- Here we will explain how to run all the componenets locally except the fake video generation server. For that we will require a server with GPU. 
 
 
 ### 1. Install virtualenv
 ---
 
 ```
-pip install virtualenv
 pip install virtualenv
 ```
 
@@ -78,12 +80,12 @@ Run in production:
 rasa run --enable-api
 ```
 
-### 4. Set up RASA Action server
+### 5. Set up RASA Action server
 ---
 
 **Pre-requisite - You need to get API keys as mentioned in the actions/actions.py file and put it there. Also you need to set up ParlAI and Chatterbot app server and mention the URLs of those servers in the actions.py file.**
 
-0. Open a new terminal
+Open a new terminal
 
 ```
 cd 2_rasa_chitchat
@@ -94,7 +96,7 @@ rasa run action
 ```
 
 
-### 5. Set up ParlAI server
+### 6. Set up ParlAI server
 ---
 ```
 git clone https://github.com/titanlambda/ParlAI.git
@@ -106,14 +108,14 @@ pip install tornado
 pip install 'git+https://github.com/rsennrich/subword-nmt.git#egg=subword-nmt'
 ```
 
-### 6. Run ParlAI server
+### 7. Run ParlAI server
 ---
 
-#### It has 2 server componenets - socket server on port 10001 and then http server on 8080
+##### It has 2 server componenets - socket server on port 10001 and then http server on 8080
 
 
 #### Terminal 1: Open the socket server
-=========================================================
+
 ```
 cd ParlAI
 python parlai/chat_service/services/websocket/run.py --config-path parlai/chat_service/tasks/chatbot/config.yml --port 10001
@@ -138,7 +140,7 @@ Open browser and go to http://localhost:8080 and start typing the message
 **IMP: Always type "begin" as the first message to start the server.**
 
 
-### 6. Setup and run Chatterbot server
+### 8. Setup and run Chatterbot server
 ---
 
 Open a new terminal
@@ -158,38 +160,55 @@ cd 4_chatterbot
 pip install -r requirements.txt
 ```
 
-- Train the model: copy "ALL_chatterbot_FINAL.csv" from data processor to the data folder here then run ```
+- Train the model: copy "ALL_chatterbot_FINAL.csv" from data processor to the data folder here then run 
+
+```
 python train.py
 ```
 
-- Launch the app server
+- Launch the app server on port 5000
+
 ```
 python app.py
 ```
 
+---
+### 9. Run the video streamer
+---
+- In the pipeline folder, record one video of you sitting and doing nothing as if you are listening to the audio over the zoom call. Example given in the source folder called "silent.m4v".
+
+- Go to google tesxt to speech service and register there to get an API key. It should be in a file called "key.json". Download the file and save it in this folder.
+
+Open a new terminal
+
+``` 
+cd 5_pipeline
+virtualenv venv_pipeline
+source venv_pipeline
+pip install -r requirements.txt
+python streamerV4.py
+```
 
 
-Terminal 4: Setup Rasa chitchat Server and run
-================================================
 
 
-Terminal 5: Setup Rasa Action Server
-=====================================
+---
+### 10. Run the audio speech to text engine
+---
+Open a new terminal
+
+``` 
+cd 5_pipeline
+source venv_pipeline
+pip install -r requirements.txt
+python audio_recognition.py
+```
 
 
-Server 1 with GPU: Set-up LipGan server with google text to speech to receive a text and generate a video of you saying it
-=========================================================================================
-
-
-Terminal 6: Run the video streamer
-=====================================
-In the pipeline folder, record one video of you sitting and doing nothing as if you are listening to the audio over the zoom call. Example given.
-
-
-Terminal 7: Run the audio speech to text engine to get your voice and convert to sentence
-===========================================================================================
-In the pipeline
-Get the google json key from here, copy it to json folder
+---
+### 11. Set up the server (with GPU) which will generate the lip-sync video.
+---
+Create your server either in cloud or you can run on local machine
 
 
 
