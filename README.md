@@ -1,15 +1,23 @@
 
 # Identity Clonning
 
-![](https://github.com/titanlambda/identity-cloning/blob/master/image1.png)
-![](https://github.com/titanlambda/identity-cloning/blob/master/image2.png)
-![](https://github.com/titanlambda/identity-cloning/blob/master/image3.png)
+This project is inspired by the first episode of the season 2 of Black Mirror called "Be Right Back". Here we tried to create a pipeline using various AI projects to create a bot who talks like me and can be used to impersonate me online and do social engineering. 
+
+### Output: 
+Here are few sample output of text chat with the bot which is trained with my conversational data:
+![](![](https://github.com/titanlambda/identity-cloning/blob/master/sample_output/demo1.png))
+
 
 
 ### Pre-requisite: 
 - We will be using virtualenv to create virtual environments. You can you other options like Conda if are familiar to that. 
 - Python 3.7 used for this project
 - Here we will explain how to run all the componenets locally except the fake video generation server. For that we will require a server with GPU. 
+
+
+### Architecture: 
+![](https://github.com/titanlambda/identity-cloning/blob/master/sample_output/flow.png)
+![](https://github.com/titanlambda/identity-cloning/blob/master/sample_output/architecture.png)
 
 
 ### 1. Install virtualenv
