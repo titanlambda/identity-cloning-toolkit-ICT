@@ -5,7 +5,7 @@ This project is inspired by the first episode of the season 2 of Black Mirror ca
 
 ### Output: 
 - Here are few sample output of text chat with the bot which is trained with my conversational data:
-- ![](https://github.com/titanlambda/identity-cloning/blob/master/sample_output/demo1.png)
+![](https://github.com/titanlambda/identity-cloning/blob/master/sample_output/text_demo.png)
 
 - Here is a video demonstration where someone is talking to the bot and the bot is trying to do a social engineering by asking for money.
 
