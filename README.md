@@ -241,7 +241,32 @@ python audio_recognition.py
 ---
 ### 11. Set up the server (with GPU) which will generate the lip-sync video.
 ---
-Create your server either in cloud or you can run on local machine
+WORK IN PROGRESS. I WILL BE RELEASING THIS PART TOMORROW DURING MY TALK...
+
+---
+### 12. Contribution
+---
+Please feel free to provide your:
+- feedback
+- suggestions
+- Any other comment
+- If you want to contribute or help me to improve it with some better componenets
+
+---
+### 13. TO DO
+---
+- Will improve the documentation
+- Improve API calling mechanism
+- Simpler deployment
+
+---
+### 14. Future Roadmap
+---
+Following features will be added in the future:
+- personality analysis
+- emotion and sentiment analysys
+- Adding knowledge base to improve the genuinity of the bot
+
 
 
 
