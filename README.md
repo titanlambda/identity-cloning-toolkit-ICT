@@ -22,7 +22,7 @@ This project is inspired by the first episode of the season 2 of Black Mirror ca
 The entire project has mainly 3 componenets:
 - Brain - NLP engine which will respond to a question with a similar utterance of mine.
 - Voice - Voice cloning which will clone my voice and say the response generated in the previous step (Work In Progress, as of now we are using google text to speech engine.)
-- Face - Video generation 
+- Face - Video generation where we used [LipGAN](https://github.com/Rudrabha/LipGAN) library to generate video at runtime and play in response of the question asked as if the user is talking to a person.
 
 ### Architecture: 
 ![](https://github.com/titanlambda/identity-cloning/blob/master/sample_output/architecture.png)
@@ -51,7 +51,6 @@ It has following componenets:
 5. 5_pipeline - Audio/Video streamer and google hangout integration to make it live in action
 
 
-
 ### 3. Process Social Network data
 ---
 
@@ -77,9 +76,14 @@ python 4_mergeAllData.py
 
 ##### You should get the final output data file "ALL_chatterbot_FINAL.csv" inside output folder. We will be using this file in step 4_chatterbot
 
+![](https://github.com/titanlambda/identity-cloning/blob/master/sample_output/Categories%20of%20conversation.png)
 
 ### 4. Set up RASA chitchat server
 ---
+
+![](https://github.com/titanlambda/identity-cloning/blob/master/sample_output/cat1_RASA.png)
+
+
 0. Open a new terminal
 
 ``` 
@@ -103,6 +107,8 @@ rasa run --enable-api
 ### 5. Set up RASA Action server
 ---
 
+![](https://github.com/titanlambda/identity-cloning/blob/master/sample_output/cat3_RASA_actions.png)
+
 **Pre-requisite - You need to get API keys as mentioned in the actions/actions.py file and put it there. Also you need to set up ParlAI and Chatterbot app server and mention the URLs of those servers in the actions.py file.**
 
 Open a new terminal
@@ -118,6 +124,9 @@ rasa run action
 
 ### 6. Set up ParlAI server
 ---
+
+![](https://github.com/titanlambda/identity-cloning/blob/master/sample_output/cat4_ParlAI.png)
+
 ```
 git clone https://github.com/titanlambda/ParlAI.git
 cd ParlAI
@@ -162,6 +171,8 @@ Open browser and go to http://localhost:8080 and start typing the message
 
 ### 8. Setup and run Chatterbot server
 ---
+
+![](https://github.com/titanlambda/identity-cloning/blob/master/sample_output/cat2_chatterbot.png)
 
 Open a new terminal
 
