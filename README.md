@@ -1,6 +1,8 @@
 
 # Identity Clonning
 
+I am releasing this project as part of my talk in Black Hat USA 2020 conference. More details here - https://www.blackhat.com/us-20/briefings/schedule/index.html#how-i-created-my-clone-using-ai---next-gen-social-engineering-19802
+
 This project is inspired by the first episode of the season 2 of Black Mirror called "Be Right Back". Here we tried to create a pipeline using various AI projects to create a bot who talks like me and can be used to impersonate me online and do social engineering. The objective of this prototype is to simulate a Google hangout video call where someone can talk to the bot over a video call which will look like me and say in my voice with similar kind of response what I prefer to give based on my personality.
 
 ### Output: 
