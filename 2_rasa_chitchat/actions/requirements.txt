@@ -1,0 +1,4 @@
+requests
+newsapi-python
+wikipedia
+requests_futures

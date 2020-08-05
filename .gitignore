@@ -1,0 +1,12 @@
+2_rasa_chitchat/models/20200805-024139.tar.gz
+2_rasa_chitchat/models/20200805-032600.tar.gz
+2_rasa_chitchat/tests/conversation_tests.md
+2_rasa_chitchat/__pycache__/__init__.cpython-37.pyc
+2_rasa_chitchat/__pycache__/actions.cpython-37.pyc
+.idea/.gitignore
+.idea/identity-clonning.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
+dataHandler.cpython-37.pyc
