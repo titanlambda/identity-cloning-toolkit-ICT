@@ -1,13 +1,15 @@
 
 # Identity Clonning
 
-This project is inspired by the first episode of the season 2 of Black Mirror called "Be Right Back". Here we tried to create a pipeline using various AI projects to create a bot who talks like me and can be used to impersonate me online and do social engineering. 
+This project is inspired by the first episode of the season 2 of Black Mirror called "Be Right Back". Here we tried to create a pipeline using various AI projects to create a bot who talks like me and can be used to impersonate me online and do social engineering. The objective of this prototype is to simulate a Google hangout video call where someone can talk to the bot over a video call which will look like me and say in my voice with similar kind of response what I prefer to give based on my personality.
 
 ### Output: 
-Here are few sample output of text chat with the bot which is trained with my conversational data:
-![](![](https://github.com/titanlambda/identity-cloning/blob/master/sample_output/demo1.png))
+- Here are few sample output of text chat with the bot which is trained with my conversational data:
+- ![](https://github.com/titanlambda/identity-cloning/blob/master/sample_output/demo1.png)
 
+- Here is a video demonstration where someone is talking to the bot and the bot is trying to do a social engineering by asking for money.
 
+- [![](http://img.youtube.com/vi/-bhIL2qnXxc/0.jpg)](http://www.youtube.com/watch?v=-bhIL2qnXxc "Social engineering attempt with a bot making hangout call and asking for money")
 
 ### Pre-requisite: 
 - We will be using virtualenv to create virtual environments. You can you other options like Conda if are familiar to that. 
@@ -15,8 +17,14 @@ Here are few sample output of text chat with the bot which is trained with my co
 - Here we will explain how to run all the componenets locally except the fake video generation server. For that we will require a server with GPU. 
 
 
-### Architecture: 
+### Flow summary: 
 ![](https://github.com/titanlambda/identity-cloning/blob/master/sample_output/flow.png)
+The entire project has mainly 3 componenets:
+- Brain - NLP engine which will respond to a question with a similar utterance of mine.
+- Voice - Voice cloning which will clone my voice and say the response generated in the previous step (Work In Progress, as of now we are using google text to speech engine.)
+- Face - Video generation 
+
+### Architecture: 
 ![](https://github.com/titanlambda/identity-cloning/blob/master/sample_output/architecture.png)
 
 
