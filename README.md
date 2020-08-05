@@ -243,31 +243,30 @@ python audio_recognition.py
 ---
 WORK IN PROGRESS. I WILL BE RELEASING THIS PART TOMORROW DURING MY TALK...
 
----
-### 12. Contribution
----
+## Contribution
+
 Please feel free to provide your:
 - feedback
 - suggestions
 - Any other comment
 - If you want to contribute or help me to improve it with some better componenets
 
----
-### 13. TO DO
----
+## TO DO
+
 - Will improve the documentation
 - Improve API calling mechanism
 - Simpler deployment
 
----
-### 14. Future Roadmap
----
+## Future Roadmap
+
 Following features will be added in the future:
 - personality analysis
 - emotion and sentiment analysys
 - Adding knowledge base to improve the genuinity of the bot
 
+## Contact
 
+- You can reach me at tamaghna.basu@gmail.com
 
 
 
