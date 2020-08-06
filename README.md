@@ -2,6 +2,7 @@
 # Identity Clonning
 
 [![GitHub license](https://img.shields.io/github/license/titanlambda/identity-cloning)](https://github.com/titanlambda/identity-cloning/blob/master/LICENSE) [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Ftitanlambda%2Fidentity-cloning)](https://twitter.com/intent/tweet?text=Check%20out%20the%20Identity%20Cloning%20project%20to%20see%20how%20to%20clone%20yourself%20using%20next-generation%20AI%20to%20trigger%20a%20social%20engineering%20attack.%20%23security%20%23socialengineering%20%23phishing&url=https%3A%2F%2Fgithub.com%2Ftitanlambda%2Fidentity-cloning)
+[![GitHub forks](https://img.shields.io/github/forks/titanlambda/identity-cloning)](https://github.com/titanlambda/identity-cloning/network)
 
 I am releasing this project as part of my talk in Black Hat USA 2020 conference. More details here - https://www.blackhat.com/us-20/briefings/schedule/index.html#how-i-created-my-clone-using-ai---next-gen-social-engineering-19802
 
