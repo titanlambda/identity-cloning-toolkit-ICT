@@ -279,7 +279,7 @@ Following features will be added in the future:
 
 ## Contact
 
-- You can reach me at tamaghna.basu@gmail.com
+- You can reach me at https://in.linkedin.com/in/tamaghnabasu, mention the repo name while connecting.
 
 
 
