@@ -219,7 +219,9 @@ python app.py
 ![](https://github.com/titanlambda/identity-cloning/blob/master/sample_output/Video_Streamer_architecture.png)
 
 
-- In the pipeline folder, record one video of you sitting and doing nothing as if you are listening to the audio over the zoom call. Example given in the source folder called "silent.m4v".
+- In the pipeline folder, record one video of you sitting and doing nothing as if you are listening to the audio over the zoom call. Example given in the source folder called "silent.m4v". Make sure the video is of 480p resolution
+
+- ![](https://github.com/titanlambda/identity-cloning/blob/master/sample_output/silent.gif)
 
 - Go to google tesxt to speech service and register there to get an API key. It should be in a file called "key.json". Download the file and save it in this folder.
 
@@ -252,7 +254,7 @@ python audio_recognition.py
 ---
 ### 11. Set up the server (with GPU) which will generate the lip-sync video.
 ---
-WORK IN PROGRESS. I WILL BE RELEASING THIS PART TOMORROW DURING MY TALK...
+WORK IN PROGRESS. I WILL BE RELEASING THIS PART SOON...
 
 ## Contribution
 
